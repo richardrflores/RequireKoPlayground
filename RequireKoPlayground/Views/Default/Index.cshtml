@@ -1,0 +1,18 @@
+﻿@using RequireKoPlayground.Extensions
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.Greeting</h2>
+<p>
+    Enter your name? <input data-bind="textInput: name" />
+</p>
+<p>
+    Your name is:
+    <span data-bind="text: name"></span>
+</p>
+
+@section scripts
+{
+    @Html.InitPageMainModule("index")
+}
